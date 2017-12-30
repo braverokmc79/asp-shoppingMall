@@ -1,0 +1,20 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+Sub Application_OnStart
+  Application("count") =0
+End Sub
+
+Sub Application_OnEnd
+End Sub
+
+Sub Session_OnStart
+  Application.Lock
+  Application("count")=Application("count")+1
+  Application.UNLOCK
+End Sub
+
+
+Sub Session_OnEnd
+End Sub
+
+
+</SCRIPT>
