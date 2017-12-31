@@ -1,8 +1,17 @@
 <!--#include file=./include/header.asp  -->
+<script>
+
+function add(){
+
+  location.href="inputform.asp"  ;
+}
+</script>
 </head>
 <body>
 <!--#include file=dbcon.asp -->
+
 <%
+
   id=request("id")
   name=request("name")
   sex=request("sex")
@@ -31,14 +40,17 @@
 
    <div class="col-xs-6 col-som-6">
      <div class="text-center">
+        <p>
+          <button onclick="add()" class="btn-primary">추가하기</button>
+        </p>
         <p class="text-left">
           레코드 총 수 :  총 <%= rs("totalcount") %>개<br/>
         </p>
        <form class="form" action="search.asp" method="post">
          <div class="col-sm-2">
              <select name="keyfield" class="form-control">
-               <option>이름</option>
-               <option>성별</option>
+               <option value="name">이름</option>
+               <option value="sex">성별</option>
              </select>
          </div>
          <div class="col-sm-2">
@@ -60,11 +72,28 @@
                Set DbRec=Server.CreateObject("ADODB.Recordset")
                DbRec.CursorType=1
                if key="" Then
-                  DbRec.Open =" "
+                  DbRec.Open "Select * From usert ORDER by id asc ", db
                else
+                  DbRec.Open " Select * From usert where " & keyfield & " like '%" & key & "%' Order by id asc ", db
 
                end if
             %>
+
+            <%
+              For i =1  to rs("totalcount")
+            %>
+              <tr>
+                  <td><%= DbRec("id")%></td>
+                  <td><%= DbRec("name") %></td>
+                  <td><%= DbRec("sex") %></td>
+                  <td><%= DbRec("memo") %></td>
+              </tr>
+            <%
+              DbRec.movenext
+              Next
+            %>
+
+
 
         </table>
 

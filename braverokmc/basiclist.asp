@@ -23,7 +23,11 @@
 
       <div class="col-xs-3 col-sm-3"></div>
       <div class="col-xs-6 col-sm-6">
+
           <p>레코드 수  : <%= rs("totalcount") %></p>
+          <p>
+            <a href="inputform.asp">추가</a>
+          </p>
 
           <table class="table">
             <tr>

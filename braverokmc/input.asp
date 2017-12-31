@@ -8,7 +8,7 @@
  sex=mSecurity(request("sex"))
  memo=mSecurity(request("memo"))
 %>
-<!--#include file=dbcon.asp -->
+<!--#include virtual=./asp-shoppingMall/braverokmc/dbcon.asp -->
 <%
     sql1="insert into  usert(name, sex, memo) values('"&name & "','"& sex & "' , '" & memo & "')"
     Set rs1=db.Execute(sql1)
@@ -40,12 +40,14 @@
               <tr>
                 <td>메모 : </td>
                 <td>
-                <%= rs2("memo")%>  <textarea class="form-control" cols="10" rows="10"></textarea>
+                <%= rs2("memo")%>
                 </td>
               </tr>
               <tr>
                 <td colspan="2">
                    <a href="inputform.asp">이전화면으로</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="search.asp" class="btn-warning">검색 목록 화면</a>
                 </td>
               </tr>
           </table>

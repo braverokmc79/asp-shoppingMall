@@ -28,7 +28,9 @@ function checkInput(theForm){
   <div class="col-xs-12 col-sm-12">
       <div class="col-xs-3 col-sm-3"></div>
       <div class="col-xs-6 col-sm-6">
-
+        <p>
+          <a href="basiclist.asp">목록보기 일반</a>  &nbsp;&nbsp;&nbsp;  <a href="search.asp">목록보기 검색</a>
+        </p>
         <form method="post" action="input.asp" onsubmit="return checkInput" class="form">
           <table class="table">
                   <tr>
