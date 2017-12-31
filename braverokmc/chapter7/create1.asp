@@ -1,7 +1,7 @@
 <!--#include virtual="./braverokmc/include/header.asp" -->
 <%
   Set fs =Server.CreateObject("Scripting.FileSystemObject")
-  Set confile =fs.GETFile("C:\rc4.log")
+  Set confile =fs.GETFile("C:\inetpub\wwwroot\asp-shoppingMall\ex\test.txt")
 %>
 
 </head>

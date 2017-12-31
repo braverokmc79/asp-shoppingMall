@@ -15,5 +15,62 @@
 %>
 
 
+
+<%
+  .....
+
+   생략
+
+    DbConn.BeginTrans
+    objRs.("name") ="홍길동"
+
+    objRs.update
+    If Dbconn.ErrobjRs = 0 Then
+            DbConn.CommiTrans
+    Else
+            DbConn.RollBackTrans
+    Endif
+
+%>
+
+
+
+<%
+
+      Set Dbconn  =Server.CreateObject("ADODB.Connection")
+      Set DbCmd =Server.CreateObject("ADODB.Command")
+      DbCmd.ActiveConnection =DbConn
+
+%>
+
+
+<%
+
+    Set DbCmd =Server.CreateObject("ADODB.Command")
+    DbCmd.ActiveConnection="DSN명"
+
+%>
+
+
+
+
+  <%
+
+     Set DbCmd =Server.CreateObject("ADODB.Command")
+     DbCmd.ActiveConnection ="macaronics"
+     DbCmd.CommandText="drop table product"
+     Dbcmd.CommandType=adCmdText
+     DbCmd.Prepared =true
+     DbCmd.Execute
+     Set DbCmd.ActiveConnection=Nothing
+
+  %>
+
+
+
+
+
+
+
 </body>
 </html>

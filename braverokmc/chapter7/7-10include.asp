@@ -37,5 +37,5 @@ Case 문을 사용하여 각 조건에 맞는 include 파일을 사용한 경우
 <% CASE 2 %>
   <!-- #include virtual="whatever2.asp" -->
 <% CASE 3 %>
-  <!-- #include virtual="whatever3.asp" -->  
+  <!-- #include virtual="whatever3.asp" -->
   <% END Select %>

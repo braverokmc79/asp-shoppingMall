@@ -10,7 +10,7 @@
 
 
 
-     ' 
+     '
      ' sql="select * from usert where id=1 "
      ' Set RS = db.Execute(sql)
      '

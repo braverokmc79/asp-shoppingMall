@@ -133,3 +133,7 @@ DoWhile 문장을 다음과 같이 코딩해도 같은 결과를 보여준다.
 content =objFile.readall
 str =replace(content, char(13) & chr(10), "<br />")
 Response.write str
+
+
+
+예) create5.asp
