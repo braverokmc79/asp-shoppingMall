@@ -86,6 +86,9 @@ ten=10   '출력할 페이지의 개수를 나타낸다.
                <th>이름</th>
                <th>성별</th>
                <th>메모</th>
+               <th>
+                 수정 및 삭제
+               </th>
             </tr>
            <%
                Set DbRec=Server.CreateObject("ADODB.Recordset")
@@ -139,6 +142,7 @@ ten=10   '출력할 페이지의 개수를 나타낸다.
                 <td><%= DbRec("name") %></td>
                 <td><%= DbRec("sex") %></td>
                 <td><%= DbRec("memo") %></td>
+                <td><a href="editform.asp?id=<%= DbRec("id")  %>&name=<%=DbRec("name")%>&startpage=<%=startpage %>&curpage=<%=curpage%>">수정하기 </a> &nbsp;&nbsp;<a href="">삭제하기</a></td>
             </tr>
 
             <%
