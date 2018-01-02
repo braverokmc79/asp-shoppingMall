@@ -1,0 +1,160 @@
+@charset "utf-8";
+@import url('font.css');
+
+/* 팝업 */
+#popup div#wrapper {border-left:2px solid #1F75BF; border-right:2px solid #1F75BF; min-height:100%; _height:100%; background: #fff url(/images/popup/pop_bg02.gif) repeat-x bottom; padding:0 18px} 20160927 수정
+
+/* 버튼 styleGuide개편 */
+a.btn_tbl_gry:hover, a.btn_tbl_blue:hover, a.btn_btm_gry:hover, a.btn_btm_blue:hover, a.btn_btm_org:hover, a.btn_list_wht:hover {text-decoration:none}
+a.btn_tbl_gry {display:inline-block; padding:0 3px 0 3px; height:20px; line-height:22px; border:1px solid #b4b4b4; background:#efefef; color:#444; font-size:11px; font-family:Dotum, "돋움";letter-spacing: -1px}
+a.btn_tbl_blue {display:inline-block; padding:0 3px 0 3px; height:20px; line-height:22px; border:1px solid #0c67ae; background:#0f7ed4; color:#fff; font-size:11px; font-family:Dotum, "돋움";letter-spacing: -1px}
+a.btn_list_wht {display:inline-block; padding:0 6px 0 6px; height:20px; line-height:22px; border:1px solid #ababab; background:#fff; color:#000; font-size:12px; font-family:Dotum, "돋움";letter-spacing: -1px}
+a.btn_list_wht.red {color:#df460a !important}
+a.btn_list_wht.green {color:#5a9112 !important}
+a.btn_btm_gry {display:inline-block; padding:0 13px; height:25px; line-height:25px; border:none; background:#666; color:#fff !important; font-size:13px; font-family:NanumGothicBold}
+a.btn_btm_blue {display:inline-block; padding:0 13px; height:25px; line-height:25px; border:none; background:#0f7ed4; color:#fff; font-size:13px; font-family:NanumGothicBold}
+a.btn_btm_org {display:inline-block; padding:0 13px; height:25px; line-height:25px; border:none; background:#f47c2c; color:#fff; font-size:13px; font-family:NanumGothicBold}
+a.btn_btm_blue:link, a.btn_btm_blue:hover, a.btn_btm_blue:focus {color:#fff; cursor:pointer}
+
+/* 20170602 네이버 로그인 연동 수정 시작 */
+.btn_naver {display:inline-block; margin-left:4px; padding-right:18px; height:34px; background:url(/images/common/btn/btn_naver_group.png) right -81px no-repeat}
+.btn_naver:after {content:""; clear:both; display:block}
+.btn_naver .ico {float:left; margin-left:-4px; padding:10px 0 10px 41px; height:14px; line-height:14px; background:url(/images/common/btn/btn_naver_group.png) 0 -81px no-repeat; font-family:NanumGothicBold !important; font-weight:normal; font-size:13px; color:#fff}
+/* 20170602 네이버 로그인 연동 수정 끝 */
+
+/* \롤백 대상/ */
+#popup div#scroll {position:relative; overflow-y:scroll; overflow-x:hidden; height:460px; _width:695px; margin:-20px -18px 0 0; padding:20px 18px 20px 0;}
+#popup div#scroll div.btn {_width:680px;}
+#popup div#scroll button.layer-close {top:-18px; right:-20px; }
+/* /롤백 대상\ */
+#popup h1 {position:relative; height:31px; background:url(/images/popup/tit_bg03.gif) no-repeat left top; margin:0 -20px 17px -20px; padding:14px 0 0 25px; color:#fff; font-family:"돋움", Dotum; font-size:14px;}
+#popup h1 span {position:absolute; top:0; right:0; background:url(/images/popup/tit_bg02.gif) no-repeat right top; text-indent:-50000px; width:25px; height:45px;}
+#popup h2 {margin-bottom:10px; padding-left:18px; background:url(/images/common/bullet/bul_squ_blue.gif) no-repeat left top; color:#333; font-size:14px; line-height:1.0; clear:both; font-family:"돋움"}
+#popup h2.bul_cir {line-height:1.2em; background:url(/images/common/bullet/bul_donut_blue02.gif) no-repeat left top} /* 20170413 추가 */
+#popup h2 strong {color:#ff6600;}
+#popup h3 {margin-bottom:10px; color:#0075b0;}
+#popup strong {margin-bottom:10px}
+#popup strong.black {margin-bottom:10px; color:#333;}
+#popup span.blueunder {text-decoration:underline; color:#1469b3;}
+#popup p {color:#444}
+#popup p strong {color:#ff6600; display:block;}
+#popup b.black {color:#444; font-weight:bold;}
+#popup .app {margin-bottom:20px; text-align:center;}
+#popup .app_left {margin-bottom:20px; text-align:left;}
+#popup .exam_kind {height:100px;}
+#popup .exam_kind dt {position:relative;}
+#popup .exam_kind dd {width:70%; position:relative; top:-70px; left:170px;}
+#popup .exam_kind dd strong {display:block;}
+/*#popup p {padding-left:10px; margin-bottom:10px; line-height:1.5;}*/
+#popup p.explan {line-height:1.5; margin-bottom:10px;}
+#popup p.explan,#popup p.notice {padding:0}
+#popup p.notice {margin-bottom:20px;}
+/*#popup p strong,*/#popup strong.tit {display:block; background:url(/images/common/bullet/bul_cir_blue.gif) no-repeat left 4px; margin-left:-10px; padding-left:10px; color:#444}
+#popup button.layer-close {position:absolute; text-indent:-50000px; top:8px; right:10px; background:url(/images/common/btn/btn_close02.gif) no-repeat right top; width:21px; height:20px; border:none}
+/* 20111007 정영환 추가 */
+#popup .list_type {margin-bottom:10px;}
+#popup .list_type.line_h, .line_h {margin-bottom:10px; line-height:1.5;}
+#popup .list_type li {_position:relative; padding:0 0 5px 10px; background:url(/images/common/bullet/bul_cir_blue.gif) no-repeat left 3px;}
+/* 20120711 추가 start */
+#popup .list_type li ul.in {margin:0; padding:0;}
+#popup .list_type li ul.in li {padding:0 0 0 8px; background:url(/images/common/bullet/bul_arr_blue.gif) no-repeat left 4px;}
+/* 20120711 추가 end */
+
+/* 20110824 정영환 추가 */
+#popup p strong.blue {display:inline; background:none; margin:0; padding:0; font-weight:normal; color:#1469b3;}
+#popup p strong.black02 {display:inline; background:none; margin:0; padding:0; color:#444;}
+#popup p.line_h {line-height:1.4;}
+/* 20110824 정영환 추가 */
+#popup strong.tit {margin-left:0}
+#popup p strong span,#popup strong.impact {color:#ff6600}
+#popup p b,#popup b.impact,#popup p.notice {color:#1469B3; font-weight:normal}
+#popup p.notice * {position:relative; vertical-align:middle; position:relative; *top:-1px}
+#popup ul {margin-bottom:10px}
+#popup ul li {color:#666;}
+/*#popup ul li strong {display:block; margin-left:-8px; padding-left:8px; background:url(/images/common/bullet/bul_arr_blue.gif) no-repeat left 4px; margin-bottom:6px}*/
+#popup ul li b {color:#1469B3; font-weight:normal}
+#popup .gray_box {margin-bottom:20px; padding:10px 10px; background:#f5f5f5; border:1px solid #dcdcdc;}
+#popup .btn {padding-bottom:15px; clear:both;}
+#popup .pblue {font-size:12px; color:#1469b3; font-weight:normal;}
+
+/* 콘텐츠 설명(styleGuide개편) */
+/*#popup div.top_infobox {background:url(/images/common/bg_infobox_top02.gif) no-repeat left top; margin-bottom:20px; padding-top:12px;}
+#popup div.top_infobox ul {position:relative; padding:8px 20px 8px 15px; background:url(/images/common/bg_infobox_btm02.gif) no-repeat left bottom;}*/
+#popup div.top_infobox {margin-bottom:20px; border:1px solid #d5d5d5; background:#e8f4ff; font-family:NanumGothic}
+#popup div.top_infobox ul {position:relative; padding:12px 10px 9px 10px; margin:3px; background:#fff}
+#popup div.top_infobox ul li {padding:0 0 10px 20px; background:url(/images/common/bullet/bul_squ_white.gif) no-repeat left top; line-height:1.4; font-size:12px !important;}
+
+/* 설명 박스*(styleGuide개편) */
+/*#popup .top_infobox2 {background:url(/images/common/bg_infobox_top.gif) no-repeat left top; margin-bottom:20px; padding-top:12px}
+#popup .top_infobox2 ul {position:relative; padding:8px 15px 20px; background:url(/images/common/bg_infobox_btm.gif) no-repeat left bottom}*/
+#popup .top_infobox2 {margin-bottom:20px; border:1px solid #d5d5d5; background:#e8f4ff; font-family:NanumGothic}
+#popup .top_infobox2 ul {position:relative; padding:12px 10px 9px 10px; margin:3px; background:#fff}
+#popup .top_infobox2 ul li {padding-left:20px; background:url(/images/common/bullet/bul_squ_white.gif) no-repeat left 2px; line-height:1.6}
+
+/*#popup div.top_infobox640 {background:url(/images/common/bg_infobox_top640.gif) no-repeat left top; margin-bottom:20px; padding-top:11px;}
+#popup div.top_infobox640 ul {position:relative; padding:8px 20px 8px 15px; background:url(/images/common/bg_infobox_btm640.gif) no-repeat left bottom;}*/
+#popup div.top_infobox640{margin-bottom:20px; border:1px solid #d5d5d5; background:#e8f4ff; font-family:NanumGothic}
+#popup div.top_infobox640 ul {position:relative; padding:12px 10px 9px 10px; margin:3px; background:#fff}
+#popup div.top_infobox640 ul li {padding-left:20px; background:url(/images/common/bullet/bul_squ_white.gif) no-repeat left top; line-height:1.4; font-size:12px !important;}
+
+/*#popup div.top_infobox695 {background:url(/images/common/bg_infobox_top.gif) no-repeat left top; margin-bottom:20px; padding-top:11px;}
+#popup div.top_infobox695 ul {position:relative; padding:8px 15px 20px; background:url(/images/common/bg_infobox_btm.gif) no-repeat left bottom;}*/
+#popup div.top_infobox695 {margin-bottom:20px; border:1px solid #d5d5d5; background:#e8f4ff; font-family:NanumGothic}
+#popup div.top_infobox695 ul {position:relative; padding:12px 10px 9px 10px; margin:3px; background:#fff}
+#popup div.top_infobox695 ul li {padding:0 0 0 20px; background:url(/images/common/bullet/bul_squ_white.gif) no-repeat left 2px; line-height:1.6; font-size:12px !important;}
+#popup div.top_infobox695 ul li strong {margin:0; padding:0; color:#fb4c14; font-weight:bold; background:none;}
+/* 20150304 빠져있는 css가 있어 체크해둡니다. 시작*/
+#popup div.top_infobox695 ul li em {font-style:normal; color:#0075b0}
+/* 20150304 빠져있는 css가 있어 체크해둡니다. 끝*/
+
+#popup p.check_agree {margin-bottom:10px; text-align:center; border:1px solid #ddd; background:#f7f7f7; color:#1469B3; padding:14px 0; line-height:1.5}
+#popup p.check_agree span {display:block; padding-top:12px}
+#popup fieldset.namecheck {position:relative; width:462px; height:83px; padding:0; background:url(./images/realcheck_bg.gif) no-repeat;}
+#popup fieldset.namecheck legend {visibility:hidden; height:0; width:0; padding:0; margin:0;}
+#popup fieldset.namecheck p {padding:19px 0 0 16px; margin-bottom:13px}
+#popup fieldset.namecheck dl {margin-left:3px}
+#popup fieldset.namecheck dt {padding:2px 10px 0 13px}
+#popup fieldset.namecheck dt,#popup fieldset.namecheck dd {float:left; display:inline}
+#popup fieldset.namecheck dd input {margin:0;}
+#popup fieldset.namecheck input.submit {position:absolute; top:16px; left:365px}
+#popup table.info_list th,#popup table.info_list td {height:inherit; padding:0;}
+#popup table.info_list thead th {padding:5px 0; *height:2px;}
+#popup table.info_list tbody th,#popup table.info_list tbody td {padding:9px 10px; *height:2px;}
+#popup table.coinfo_detail td {height:18px;}
+#popup .search_list tbody.form02 th, #popup .search_list tbody.form02 td {padding:5px 0;}
+#popup .search_list {border-top:2px solid #0f7ed4; background:none} /* styleGuide개편 추가 */
+#popup .search_list thead th {border-bottom:1px solid #e3e3e3; border-bottom:1px solid #ccc; background:#f7f7f7} /* styleGuide개편 추가 */
+
+/* ♤♤♤♤♤ 데이터 테이블 ♤♤♤♤♤ */
+#popup table.info_list {margin:0 0 10px 0px;}
+#popup table.info_list img {vertical-align:middle;}
+#popup table.info_list thead.form1 tr th {padding:2px 0;}
+#popup table.info_list tbody tr th, .info_list tbody tr td, .info_list tfoot tr th, .info_list tr tfoot td {line-height:1.5; border:1px solid #ddd;}
+#popup table.info_list tbody tr td.note {padding:0 10px; text-align:left;}
+#popup table.info_list thead tr th, .info_list tbody.form05 tr th, .info_list tbody.form11 tr th, .info_list tbody tr th.th2 {color:#1469b3; background:#deebf5; border:1px solid #afc5e3; font-weight:bold;}
+#popup table.info_list thead tr td {background:#fff; border:1px solid #afc5e3; border-bottom:#ddd;}
+#popup table.info_list tbody tr th, .info_list tbody.speci th, .info_list tbody th.sky {background:#f0f6fb; color:#666; font-weight:normal;}
+#popup table.info_list tbody tr td {color:#444;}
+#popup table.info_list tbody tr td.last {text-align:center; vertical-align:middle;}
+#popup table.info_list tbody tr td ul {margin:5px 0 0 0; line-height:1.2;}
+
+#popup table.info_list tbody td span, #popup .info_list tbody td span a {color:#1469b3;}
+#popup table.info_list tbody td span a {text-decoration:underline;}
+#popup table.info_list tbody td span.due, #popup .search_list tbody td span.due {display:inline-block; width:32px; height:18px; text-align:center; font-family:tahoma; font-size:10px; color:#7a7a7a; background: url("/images/common/ico/ico_duebg.gif") no-repeat left top; line-height:1.6;}
+#popup table.info_list tbody td span.due strong,  #popup .search_list tbody td span.due strong {font-weight:bold; color:#fb4c14;}
+#popup table.info_list tbody tr.photo td {padding:0; border-left:1px solid #ddd;}
+#popup table.info_list tbody tr.photo ul {margin:20px 0 10px 10px; *zoom:1;}
+#popup table.info_list tbody tr.photo ul:after {content:""; display:block; clear:both;}
+#popup table.info_list tbody tr.photo li {float: left; margin: 0 0 9px 10px;; padding:0; border: 1px solid #ddd;}
+#popup table.info_list tbody tr.photo li img {width:139px; height:106px;}
+#popup table.info_list tbody tr.photo li.fir img {margin-left:0; width:342px; height:224px;}
+#popup table.info_list tbody tr.photo div {float:left; margin:10px 0 10px 18px; _margin-left:10px; *padding-bottom:10px; width:46%;}
+#popup table.search_form {margin-bottom:10px;}
+#popup table.search_form caption {visibility:visible; position:static; width:100%; height:initial; border-top:2px solid #0f7ed4; background:none} /* styleGuide개편 */
+#popup table.search_form th, #popup .search_form td {padding:5px 0 5px 10px; border-bottom:1px solid #ddd; height:21px;}
+#popup table.search_form td {text-align:left;}
+/* 20170413추가 */
+#popup table.info_list.type02 {clear:both}
+#popup table.info_list.type02 thead th {font-size:13px; font-family:Dotum, "돋움"}
+#popup table.info_list.type02 tbody td {padding:9px 2px}
+/* 20170413추가 */

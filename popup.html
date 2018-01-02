@@ -1,0 +1,124 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+
+
+<title>비밀번호 변경</title>
+<meta name="selected-menu" content="0,0,0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="robots" content="noindex,nofollow,noarchive" />
+<meta name="subject" content="#" />
+<meta name="author" content="#" />
+<meta name="keywords" content="#" />
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=7;IE=8;IE=9;" />
+
+
+
+<link rel="stylesheet" href="./css/popup.css" type="text/css" />
+<link rel="stylesheet" href="./css/board.css" type="text/css" />
+<style type="text/css">
+/* <![CDATA[ */
+/* board.css */table th, td {word-break:break-all}.search_form tbody td input,#layer div.category label input {*position:relative; *top:-1px}dd input {*margin-right:-3px}dd img {*top:1px;}span.tab_menu {*zoom:1}span.tab_menu02 {*zoom:1}#content .search_form tbody td.source label {_background-position:16px 0;}	.search_form tr.content td div.notice li {*zoom:1;}	.search_form tbody td.cnt_byte div {*zoom:1;}.search_form tbody.penal td ul li input {*top:-5px; *left:-5px;}	.search_form tbody td p.check,.search_form tbody td ul.check {*zoom:1;}.search_list tbody.formCo td .coinfo {_height:100%; *min-height:100%;}.search_detail caption.personal_title, x:-moz-any-link, x:default {height:38px; padding:12px 0 0 10px;}table.sch_table tbody td p span {*padding-bottom:3px}.search_contol span.range a.btn img {_margin-top:0px;}.search_contol02 span.range a.btn img {_margin-top:0px;}fieldset.search_penal dl {*zoom:1}fieldset.search_penal p {*zoom:1}fieldset.search_penal02 .penalin {*padding:10px 0 11px 15px; *zoom:1}fieldset.search_penal02 .penalin dl.othercase img {*margin-top:-1px;}span.file_btn strong input {-ms-filter:alpha(opacity=0);filter:alpha(opacity=0);opacity:0;-moz-opacity:0;}@media screen and (-webkit-min-device-pixel-ratio:0){	.search_form tbody td input {position:relative; top:-1px; vertical-align:middle};}/* content.css */.comment {_display:inline-block;}#content ul.list_type li {_position:relative;}ol.decimal li {*margin:0 0 0 25px;}.graybox dl.coun {*zoom:1;}.graybox.chek {_height:60px; _width:660px;}@media screen and (-webkit-min-device-pixel-ratio:0){	#main #content .emplist .samejob {background-position:left 42px;};}/* layout.css */#container {*zoom:1;}#header div.global span.user {*margin-top:-3px;}#header div.global dl {*margin-top:3px;}#header div.global dl dd {*padding:0 10px 0 7px; *background:url(/images/common/layout/bar_gray.gif) no-repeat scroll right 3px;}#header #tobmenu .moz {*margin-top:0;}#header #tobmenu .myinfo div, x:-moz-any-link, x:default {position:absolute; left:5px; top:-25px;}#header #tobmenu .myinfo div {*top:-26px;}#header #tobmenu .specmenu ul {*zoom:1;}#sidebar ul li ul li ul {*zoom:1;}#sidebar div.banner_empcenter ul.sercenter {*margin-top:14px; _margin-top:12px;}#sidebar div.banner_empcenter ul.sercenter li ul {*top:31px; _top:32px;}#sidebar div.banner_empcenter p {_bottom:10px; _right:9px;}#footer #footin span.family input,#footer #footin span.family img {*margin-top:-5px; _margin-top:-7px;}span#location img, x:-moz-any-link, x:default {position:relative; top:1px}@media screen and (-webkit-min-device-pixel-ratio:0){	#content span#location img {position:relative; top:1px;};}
+/* ]]> */
+</style>
+<script type="text/javascript" src="/js/keis.import.js" charset='utf-8'></script>
+<script type="text/javascript" src="/js/worknet.common.js" charset='utf-8'></script>
+<script type="text/javascript" src="/js/worknet.popup.js" charset='utf-8'></script>
+<script type="text/javascript" src="/js/worknet.indivMemberSrv.js" charset='utf-8'></script>
+<script type="text/javascript" src="/js/worknet.member.js" charset='utf-8'></script>
+
+
+<link rel="shortcut icon" href="./images/w_favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript">
+//<![CDATA[
+//json 형태의 object debugging func(홍세기 seigi_h@naver.com)
+function viewProp() {
+	var allHtml = "";
+
+	for (var x = 0 ; x < arguments.length ; x++) {
+		var obj = arguments[x];
+
+		var names = "<table border='1' cellspacing='1' cellpadding='1'><tr>";
+		if (obj.toString().substr(0,8) === '[object ') {
+			names += "<td>name</td><td>value</td></tr>";
+			var arr = new Array();
+			for (var name in obj) {
+				arr.push(name);
+			}
+			arr.sort();
+			for (var i = 0 ; i < arr.length ; i++) {
+				var key = arr[i];
+				names += "<tr><td>";
+				names += key;
+				names +='</td><td>' ;
+				names += obj[key];
+				names += '</td></tr>';
+			}
+			names += "</table>";
+			arr = null;
+		} else {
+			names += "<td>value</td></tr>";
+			names += "<tr><td>";
+			names += obj;
+			names += '</td></tr>';
+		}
+		allHtml += names + "<br/>";
+	}
+
+	var pop = window.open("", "viewProperty", "", "");
+	pop.focus();
+	pop.document.body.innerHTML = allHtml.fixed();
+
+}
+//]]>
+</script>
+</head>
+<body id="popup">
+<div id="wrapper">
+
+
+
+<script type="text/javascript" defer="defer">
+//<![CDATA[
+	function f_close(){
+		self.close();
+	}
+	function f_pwdChg(){
+
+
+
+		var url = "/indivMemberSrv/custInfoAdmin/modifyIndivCustPwdView.do";
+
+
+		if(window.opener != null){
+			window.opener.document.location.href = url;
+		}else{
+			window.open(url, "worknet");
+		}
+		self.close();
+	}
+//]]>
+</script>
+<h1>비밀번호를 변경해 주세요 <span></span></h1>
+<img src="./images/title_images.gif" alt="정보보호를 위해 비밀번호를 변경해 주세요!">
+<div>
+	<ul style="width: 300px; padding: 24px 0px 10px 24px;">
+		<li style="padding-bottom: 10px;font-weight: bold;"><span style="color: #FF9900;">6개월이상 비밀번호</span>를 변경하지 않고</li>
+		<li style="padding-bottom: 10px;font-weight: bold;">동일한 비밀번호를 워크넷에 이용하고 계십니다.</li>
+		<li style="padding-bottom: 10px;font-weight: bold;">정기적인 비밀번호 변경으로</li>
+		<li style="padding-bottom: 10px;font-weight: bold;">회원님의 정보를 보호해 주세요.</li>
+	</ul>
+</div>
+<div style="text-align: center;width: 348px;">
+	<a href="javascript:f_pwdChg();" class="btn_btm_blue">비밀번호 변경</a>
+	<a href="javascript:f_close();" class="btn_btm_gry">다음에 변경하기</a>
+</div>
+
+</div>
+</body>
+</html>
