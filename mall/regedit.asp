@@ -1,12 +1,12 @@
-<!--#include  virtual=./mall/include/header.asp -->
+<!--#include  virtual=./asp-shoppingMall/mall/include/header.asp -->
 <%
   if session("id1") ="" or isNull(session("id1")) then
    '세션 값이 없으면 메인으로 이동
-    response.redirect("/mall")
+    response.redirect("/asp-shoppingMall/mall")
   end if
 
   if session("id1")="guest" then
-    response.write "<script>alert('계정은 정규회원이 아니므로 회원정보를 수정할 수 없습니다. '); location.href='/mall';</script>"
+    response.write "<script>alert('계정은 정규회원이 아니므로 회원정보를 수정할 수 없습니다. '); location.href='/asp-shoppingMall/mall';</script>"
   end if
 %>
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
 %>
 
 
-<!--#include virtual="./mall/include/header_menu.asp" -->
+<!--#include virtual="./asp-shoppingMall/mall/include/header_menu.asp" -->
 
 <div class="rows">
 <div class="container">
@@ -141,9 +141,8 @@ $(document).ready(function() {
 
             <tr class="text-center">
               <td colspan="2">
-                <button type="button" class="btn-success" id="btnRegist">신규회원 등록 </button>
-                <button type="button"  class="btn-primary">로그인 </button>
-                <button type="button" class="btn-danger">닫기</button>
+                <input type="hidden" name="id1" value="<%= rs1("id1")%>" >
+                <button type="button" class="btn-success" id="btnRegist">정보변경하기</button>
               </td>
             </tr>
          </table>
@@ -158,4 +157,4 @@ $(document).ready(function() {
 
 
 
-<!--#include  virtual=./mall/include/footer.asp -->
+<!--#include  virtual=./asp-shoppingMall/mall/include/footer.asp -->

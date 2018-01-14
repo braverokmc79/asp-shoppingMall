@@ -43,16 +43,26 @@
   </head>
   <body>
 
+
+<br/></br/></br/></br/></br/>
+
+<div class="rows">
+  <div class="col-xs-12 col-sm-12">
+
+      <div class="text-center">
+        <ul>
+         <li>
+           <a href="./chapter7/dsn.asp" class="btn btn-success">DSN 을 이용한 데이터 베이스 연결</a>
+         </li>
+        </ul>
+        <a href='/asp-shoppingMall/mall/' class="btn btn-primary">쇼핑몰</a>
+        <br />
+
+      </div>
+
+
+  </div>
 </div>
-
-<ul>
-
- <li>
-   <a href="./chapter7/dsn.asp">DSN 을 이용한 데이터 베이스 연결</a>
- </li>
-
-</ul>
-
 
 </body>
 </html>

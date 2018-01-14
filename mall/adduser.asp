@@ -1,4 +1,4 @@
-<!--#include  virtual=./mall/include/header.asp -->
+<!--#include  virtual=./asp-shoppingMall/mall/include/header.asp -->
 <script>
 $(document).ready(function() {
 
@@ -81,7 +81,7 @@ $(document).ready(function() {
 <%
     end if
 %>
-<!--#include virtual="./mall/include/header_menu.asp" -->
+<!--#include virtual="./asp-shoppingMall/mall/include/header_menu.asp" -->
 
 <div class="rows">
 <div class="container">
@@ -164,4 +164,4 @@ $(document).ready(function() {
 
 
 
-<!--#include  virtual=./mall/include/footer.asp -->
+<!--#include  virtual=./asp-shoppingMall/mall/include/footer.asp -->

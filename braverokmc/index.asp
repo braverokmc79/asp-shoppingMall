@@ -10,6 +10,9 @@
         <button onclick="location.href='inputform.asp'">등록 폼</button> <button onclick="location.href='basiclist.asp'">목록</button>
         <button onclick="location.href='search.asp'">검색 목록</button>
 
+        <br />
+        쇼핑몰
+
   </div>
 </div>
 

@@ -1,7 +1,7 @@
-<!--#include  virtual=./mall/include/header.asp -->
+<!--#include  virtual=./asp-shoppingMall/mall/include/header.asp -->
 </header>
 <body>
-<!--#include virtual="./mall/include/header_menu.asp" -->
+<!--#include virtual="./asp-shoppingMall/mall/include/header_menu.asp" -->
 
 <div class="rows">
 <div class="container">
@@ -11,7 +11,7 @@
       <div class="col-xs-3 col-sm-3"></div>
       <div class="col-xs-6 col-sm-6">
         <br/></br/></br/></br/></br/>
-        <form method="post" action="loginOk.asp">
+        <form method="post" action="/asp-shoppingMall/mall/loginOk.asp">
           <table class="table table-striped">
               <tr>
                 <th>회원 ID </th>
@@ -32,4 +32,4 @@
 </div>
 </div>
 
-<!--#include  virtual=./mall/include/footer.asp -->
+<!--#include  virtual=./asp-shoppingMall/mall/include/footer.asp -->

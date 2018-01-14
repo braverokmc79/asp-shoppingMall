@@ -1,7 +1,7 @@
-<!--#include  virtual=./mall/include/header.asp -->
+<!--#include  virtual=./asp-shoppingMall/mall/include/header.asp -->
 </header>
 <body>
-<!--#include virtual="./mall/dbcon.asp" -->
+<!--#include virtual="./asp-shoppingMall/mall/dbcon.asp" -->
 <%
   Dim id1, passwd, username, email, tel, address, age, sex
   id1=request.form("id1")
@@ -50,7 +50,7 @@
 %>
 
 
-<!--#include virtual="./mall/include/header_menu.asp" -->
+<!--#include virtual="./asp-shoppingMall/mall/include/header_menu.asp" -->
 <div class="rows">
 <div class="container">
 

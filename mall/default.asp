@@ -1,8 +1,8 @@
-<!--#include  virtual=./mall/include/header.asp -->
+<!--#include  virtual=./asp-shoppingMall/mall/include/header.asp -->
 </header>
 <body>
-<!--#include virtual="./mall/dbcon.asp" -->
-<!--#include virtual="./mall/include/header_menu.asp" -->
+<!--#include virtual="./asp-shoppingMall/mall/dbcon.asp" -->
+<!--#include virtual="./asp-shoppingMall/mall/include/header_menu.asp" -->
 <div class="rows">
 <div class="container">
 
@@ -55,4 +55,4 @@
 </div>
 
 
-  <!--#include  virtual=./mall/include/footer.asp -->
+  <!--#include  virtual=./asp-shoppingMall/mall/include/footer.asp -->

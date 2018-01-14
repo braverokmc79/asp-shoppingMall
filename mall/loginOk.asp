@@ -1,4 +1,4 @@
-<!--#include  virtual=./mall/include/header.asp -->
+<!--#include  virtual=./asp-shoppingMall/mall/include/header.asp -->
 </header>
 <body>
 <!--#include file=dbcon.asp   -->
@@ -7,7 +7,7 @@
   passwd=request("passwd")
   submode=request("submode")
 
-  redirectUrl="/mall/login.asp"
+  redirectUrl="/asp-shoppingMall/mall/login.asp"
 
 '아이디 값을 입력하지 않았을 경우
 if id1 ="" then
@@ -31,7 +31,7 @@ if rs.EOF then
 else
  ' 세션 데이터 저장
  session("id1")=rs("id1")
- response.redirect("/mall")
+ response.redirect("/asp-shoppingMall/mall")
 end if
 
 
