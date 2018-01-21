@@ -15,6 +15,7 @@
               <ul class="nav navbar-nav">
                 <li><a  href="/asp-shoppingMall/mall/">ASP mall</a></li>
                 <li class="active"><a href="/asp-shoppingMall/mall/adduser.asp">회원 등록</a></li>
+                <li><a href="/asp-shoppingMall/mall/prodlist.asp">상품목록</a></li>
                 <%
                   if session("id1") ="" then
                 %>
@@ -22,8 +23,9 @@
                 <%
                   else
                 %>
+
                         <li><a href="/asp-shoppingMall/mall/memberList.asp">회원록록</a></li>
-                        
+
                         <li><a href="/asp-shoppingMall/mall/logout.asp">로그아웃</a></li>
                         <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= session("id1")  %>님 환영합니다.

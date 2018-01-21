@@ -50,7 +50,7 @@ Response.End : ASP  파일 처리를 멈추고 현재 결과값을 보낸다. --
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 
-<style>
+<!-- <style>
 #header_menu, #navbar, .navbar navbar-inverse navbar-static-top{
 background:#EE7785;
 color: white;
@@ -89,4 +89,4 @@ color: white;
    text-align: center;
    vertical-align: middle;
 }
-</style>
+</style> -->
